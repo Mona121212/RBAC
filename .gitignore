@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+.env
+package-lock.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# IDE config
+.vscode/
+.DS_Store
+
+# Optional: skip system files
+Thumbs.db
