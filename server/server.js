@@ -7,10 +7,10 @@ app.use(express.json());
 
 app.get('/test-db', async (req, res) => {
   try {
-    const [rows] = await pool.query('SELECT 1');
-    res.send('✅ MySQL connected!');
+    const [rows] = await pool.query('SELECT 1'); // alter any table you want to test
+    res.send(' MySQL connected!');
   } catch (err) {
-    console.error('❌ DB Connection Error:', err);
+    console.error(' DB Connection Error:', err);
     res.status(500).send('Database connection failed');
   }
 });
